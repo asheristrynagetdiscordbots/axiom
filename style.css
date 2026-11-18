@@ -54,3 +54,4 @@ ol.steps li{margin-bottom:12px}
 footer{border-top:2px solid var(--line);padding:26px 0 44px;color:var(--muted);font-size:14px}
 footer p{max-width:80ch}
 @media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:30px}dl div{grid-template-columns:1fr}nav a{margin-left:12px}header .wrap{flex-wrap:wrap}}
+.ack{display:flex;gap:12px;align-items:flex-start;margin:20px 0;max-width:62ch;cursor:pointer}.ack input{width:22px;height:22px;margin-top:4px;accent-color:var(--accent);flex:none}

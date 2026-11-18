@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="axiom.ico"><link rel="stylesheet" href="style.css"><title>Checkout | Axiom</title></head><body>
+<header><div class="wrap"><a class="brand" href="index.html"><img src="axiom.png" alt="">axiom</a>
+<nav><a href="index.html">home</a><a href="buy.html">buy</a><a href="download.html">download</a></nav></div></header>
+<main class="wrap" style="padding-top:36px;padding-bottom:56px">
+<h1>Checkout</h1>
+<div class="price">
+<p class="muted" style="margin-bottom:4px">Axiom for Windows 10 and 11</p>
+<p class="amt">$9.99</p><p class="muted">One-time payment. Free updates for all of version 1.</p>
+<ul class="ticks"><li>One license key, good for one computer</li><li>Your key and download link arrive by email</li><li>Every 1.x update</li></ul>
+</div>
+<p style="margin-top:22px">Use an email address you can open. Your license key is sent there as soon as the payment goes through.</p>
+<label class="ack"><input type="checkbox" id="ack"><span>I understand that Axiom automates a game, which may break that game’s rules, and that I use it at my own risk.</span></label>
+<div id="pay">
+<!-- Stripe buy button: Stripe dashboard > Payment Links > your link > Buy button. Paste your two values below. -->
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+<stripe-buy-button buy-button-id="buy_btn_REPLACE_ME" publishable-key="pk_test_REPLACE_ME"></stripe-buy-button>
+<p class="muted" style="margin-top:14px">Button not showing? <a href="PAYMENT_LINK_URL">Pay on Stripe’s page instead</a>.</p>
+</div>
+<p class="muted" style="margin-top:22px">Payment is handled by Stripe, so Axiom never sees your card details. Not sure yet? Read the <a href="index.html#faq">questions on the home page</a>, or email support@YOUR-SITE.</p>
+</main>
+<script>(function(){var b=document.getElementById("ack"),p=document.getElementById("pay");if(!b||!p)return;p.hidden=!b.checked;b.addEventListener("change",function(){p.hidden=!b.checked})})()</script>
+<footer><div class="wrap"><p>Axiom is an independent tool. It is not made by, affiliated with, or endorsed by Roblox Corporation or the creators of any game. Roblox and game names belong to their owners. Automation may go against a game’s rules, so you use Axiom at your own risk.</p></div></footer></body></html>
